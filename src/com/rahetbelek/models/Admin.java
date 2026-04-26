@@ -11,6 +11,11 @@ public class Admin {
     }
 
     public void afficherDashboard() {
-        System.out.println("Dashboard admin affiché");
+        System.out.println("Bienvenue Admin: " + nom);
+    }
+
+    public void validerDemande(Demande d) {
+        System.out.println("Admin valide la demande...");
+        d.accepter();
     }
 }
