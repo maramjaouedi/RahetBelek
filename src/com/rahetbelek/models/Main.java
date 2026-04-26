@@ -28,6 +28,15 @@ public class Main {
         // Afficher les détails
         demande.afficherDetails();
         
-        System.out.println("\n✅ Sprint 2 - Logique metier ajoutee");
+        System.out.println("\n Sprint 2 - Logique metier ajoutee");
     }
-}
+    // --- Paiement sécurisé + Historique (Sara) ---
+        System.out.println("\n--- Paiement sécurisé (Sara) ---");
+        Paiement paiement = new Paiement(1, 149.0, "2026-04-26", "En attente", "Carte bancaire");
+        paiement.effectuerPaiement();
+        paiement.afficherHistorique();
+
+        Paiement paiement2 = new Paiement(2, 89.0, "2026-04-15", "En attente", "Virement");
+        paiement2.effectuerPaiement();
+        paiement2.afficherHistorique();
+}}
