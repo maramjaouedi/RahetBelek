@@ -24,3 +24,19 @@ Permettre aux familles expatriées d’assurer la sécurité et le confort de le
 3. Accepter et suivre une mission (statuts)
 4. Effectuer un paiement sécurisé et consulter l’historique
 5. Administration et supervision de la plateforme
+
+6.  Tableaux Kanban Sprint 1 & 2
+
+### Sprint 1 Kanban
+docs/captures/kanban.png
+
+ Modélisation UML
+
+### Diagramme de Cas d'Utilisation
+![alt text](captures/dcu.png)
+
+### Diagramme de Classes
+![alt text](captures/dc.png)
+
+### Diagramme de Séquence
+![alt text](ds.png)
