@@ -11,7 +11,7 @@ Plateforme pour aider les familles à distance à gérer les besoins de leurs pa
 
 ## 🎨 Design (Figma)
 Lien:
-[[https://www.figma.com/XXXX](https://otter-letter-39132924.figma.site/)](https://www.figma.com/make/sc0JEQSFUUDMeyo5D2G0yE/Design-admin-dashboard-UI?t=IMqWx2PG3Hj5iVcb-1)
+[https://www.figma.com/XXXX](https://otter-letter-39132924.figma.site/)](https://www.figma.com/make/sc0JEQSFUUDMeyo5D2G0yE/Design-admin-dashboard-UI?t=IMqWx2PG3Hj5iVcb-1)](https://www.figma.com/make/sc0JEQSFUUDMeyo5D2G0yE/Design-admin-dashboard-UI?t=IMqWx2PG3Hj5iVcb-1)
 
 
 ## ⚙️ Technologies
