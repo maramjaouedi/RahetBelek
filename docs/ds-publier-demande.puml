@@ -1,0 +1,31 @@
+@startuml
+actor "Expatrié" as Client
+participant "Interface\nWeb" as UI
+participant "Contrôleur\nDemande" as Controller
+participant "Service\nDemande" as Service
+database "Base de\ndonnées" as DB
+
+Client -> UI : Remplit formulaire demande
+activate UI
+
+UI -> Controller : envoyerDemande(details)
+activate Controller
+
+Controller -> Service : creerDemande(details)
+activate Service
+
+Service -> DB : sauvegarder(demande)
+activate DB
+DB --> Service : confirmation
+deactivate DB
+
+Service --> Controller : demandeCrée(id)
+deactivate Service
+
+Controller --> UI : confirmation(numéro)
+deactivate Controller
+
+UI --> Client : "Votre demande #123 a été publiée"
+deactivate UI
+
+@enduml
