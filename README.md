@@ -17,6 +17,10 @@ Permettre aux familles expatriées d’assurer la sécurité et le confort de le
 - Expatrié (Client)
 - Prestataire
 - Administrateur
+- ## Maquettes Figma
+
+### Paiement sécurisé + Historique (Sara)
+[Voir le maquettes Figma https://www.figma.com/make/BDUzrzIY6QoTHbyIcZe9E1/Page-de-paiement-en-ligne?t=FmMu5HQTONMgq34P-1]
 
 ## Fonctionnalités principales
 1. Publier une demande de service (courses, médicaments, médecin)
