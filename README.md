@@ -17,3 +17,12 @@ Lien:
 - Java
 - GitHub
 - Figma
+
+  ## 📊 UML Diagrams
+
+### Use Case Diagram
+<img width="595" height="180" alt="image" src="https://github.com/user-attachments/assets/e410713e-89d8-4cb2-b393-7d0ff7ab17f6" />
+
+### Class Diagram
+<img width="455" height="481" alt="image" src="https://github.com/user-attachments/assets/1c7082c5-8d27-489b-8184-870835d7c74c" />
+
