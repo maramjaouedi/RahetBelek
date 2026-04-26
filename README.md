@@ -10,21 +10,20 @@ Permettre aux familles expatriées d’assurer la sécurité et le confort de le
 - Maram Jaouadi — Product Owner + Dev — Gestion des demandes
 -islem talmoudhi — Scrum Master + Dev — Gestion des prestataires
 -  razan salem— Dev — Gestion des missions (acceptation + suivi)
--  — Dev — Paiement sécurisé + historique
+-  sara ayari- Dev — Paiement sécurisé + historique
   hajer saidi — Dev — Administration (dashboard + gestion)
 
 ## Acteurs du système
 - Expatrié (Client)
 - Prestataire
 - Administrateur
-- ## Maquettes Figma
-
-### Paiement sécurisé + Historique (Sara)
-[Voir le maquettes Figma https://www.figma.com/make/BDUzrzIY6QoTHbyIcZe9E1/Page-de-paiement-en-ligne?t=FmMu5HQTONMgq34P-1]
-
 ## Fonctionnalités principales
 1. Publier une demande de service (courses, médicaments, médecin)
 2. Gérer les prestataires (profil, disponibilité)
 3. Accepter et suivre une mission (statuts)
-4. Effectuer un paiement sécurisé et consulter l’historique
+4. Effectuer un paiement sécurisé et consul
 5. Administration et supervision de la plateforme
+ ## Maquettes Figma
+
+### Paiement sécurisé et Historique (Sara)
+[Voir les maquettes Figma https://www.figma.com/make/BDUzrzIY6QoTHbyIcZe9E1/Page-de-paiement-en-ligne?t=FmMu5HQTONMgq34P-1]
