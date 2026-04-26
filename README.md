@@ -26,4 +26,4 @@ Permettre aux familles expatriées d’assurer la sécurité et le confort de le
  ## Maquettes Figma
 
 ### Paiement sécurisé et Historique (Sara)
-[Voir les maquettes Figma https://www.figma.com/make/BDUzrzIY6QoTHbyIcZe9E1/Page-de-paiement-en-ligne?t=FmMu5HQTONMgq34P-1]
+[Voir les maquettes Figma https://www.figma.com/make/BDUzrzIY6QoTHbyIcZe9E1/Page-de-paiement-en-ligne?fullscreen=1&t=bGWZLnmGNfFEVt1P-1]
