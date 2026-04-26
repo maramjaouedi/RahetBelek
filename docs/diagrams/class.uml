@@ -1,0 +1,31 @@
+@startuml
+
+class Admin {
+  - nom : String
+  - email : String
+  + afficherDashboard() : void
+  + validerDemande(d : Demande) : void
+}
+
+class Demande {
+  - description : String
+  - statut : String
+  + accepter() : void
+}
+
+class Dashboard {
+  + afficherStatistiques() : void
+}
+
+class Statistique {
+  - nbUtilisateurs : int
+  - nbPrestataires : int
+  - nbDemandes : int
+}
+
+Admin --> "0..*" Demande : valide
+Admin --> "1" Dashboard : consulte
+
+Dashboard "1" *-- "1" Statistique : contient
+
+@enduml
