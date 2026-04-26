@@ -151,3 +151,11 @@ L'approche hybride AGL + IA a permis un développement rapide tout en maintenant
 **Points d'amélioration:**
 - ⚠️ Présence de toute l'équipe dès Sprint 1
 - ⚠️ Revue de code systématique
+
+## 9. Tableaux Kanban Sprint 1 & 2
+
+### Sprint 1 Kanban
+![Kanban Sprint 1](captures/kanban-sprint1.png)
+
+### Sprint 2 Kanban
+![Kanban Sprint 2](captures/kanban-sprint2.png)
