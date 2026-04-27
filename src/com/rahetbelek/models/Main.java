@@ -39,4 +39,24 @@ public class Main {
         Paiement paiement2 = new Paiement(2, 89.0, "2026-04-15", "En attente", "Virement");
         paiement2.effectuerPaiement();
         paiement2.afficherHistorique();
-}}
+}
+// --- Sprint 2 : PaiementV2 - Logique metier (Sara) ---
+        System.out.println("\n=== Sprint 2 - Paiement securise (Sara) ===");
+
+        // Scenario 1 : paiement reussi
+        PaiementV2 p1 = new PaiementV2(1, 149.0, "2026-04-27", "En attente", "Carte bancaire");
+        p1.effectuerPaiement(500.0);
+
+        // Scenario 2 : solde insuffisant
+        PaiementV2 p2 = new PaiementV2(2, 89.0, "2026-04-27", "En attente", "Virement");
+        p2.effectuerPaiement(50.0);
+
+        // Scenario 3 : annulation
+        PaiementV2 p3 = new PaiementV2(3, 199.0, "2026-04-27", "En attente", "Carte bancaire");
+        p3.effectuerPaiement(300.0);
+        p3.annulerPaiement();
+
+        // Afficher historique
+        p1.afficherHistorique();
+        }
+}
