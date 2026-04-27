@@ -1,0 +1,53 @@
+@startuml
+left to right direction
+skinparam packageStyle rectangle
+
+actor "Expatrié" as Client
+actor "Prestataire" as Prestataire
+actor "Administrateur" as Admin
+
+rectangle "Rahet Belek" {
+  
+  usecase "S'inscrire" as UC1
+  usecase "Se connecter" as UC2
+  usecase "Publier une demande" as UC3
+  usecase "Consulter mes demandes" as UC4
+  usecase "Sélectionner un prestataire" as UC5
+  usecase "Payer une mission" as UC6
+  usecase "Consulter historique" as UC7
+  
+  usecase "Créer profil prestataire" as UC8
+  usecase "Gérer disponibilité" as UC9
+  usecase "Voir missions disponibles" as UC10
+  usecase "Accepter une mission" as UC11
+  usecase "Marquer mission terminée" as UC12
+  
+  usecase "Voir tableau de bord" as UC13
+  usecase "Gérer utilisateurs" as UC14
+  usecase "Consulter alertes" as UC15
+  
+  Client --> UC1
+  Client --> UC2
+  Client --> UC3
+  Client --> UC4
+  Client --> UC5
+  Client --> UC6
+  Client --> UC7
+  
+  Prestataire --> UC1
+  Prestataire --> UC2
+  Prestataire --> UC8
+  Prestataire --> UC9
+  Prestataire --> UC10
+  Prestataire --> UC11
+  Prestataire --> UC12
+  
+  Admin --> UC2
+  Admin --> UC13
+  Admin --> UC14
+  Admin --> UC15
+  
+  UC5 ..> UC11 : <<include>>
+  UC6 ..> UC5 : <<extend>>
+}
+@enduml

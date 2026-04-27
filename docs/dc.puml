@@ -1,0 +1,73 @@
+@startuml
+class Expatrie {
+  - int id
+  - String nom
+  - String email
+  - String telephone
+  - String ville
+  + publierDemande()
+  + afficherMesDemandes()
+  + getNom()
+}
+
+class Demande {
+  - int id
+  - String typeService
+  - String description
+  - String localisation
+  - double budget
+  - String statut
+  + publier()
+  + afficherDetails()
+  + selectionnerPrestataire()
+}
+
+class Prestataire {
+  - int id
+  - String nom
+  - String email
+  - String telephone
+  - List<String> services
+  - String disponibilite
+  + creerProfil()
+  + gererDisponibilite()
+  + accepterMission()
+}
+
+class Mission {
+  - int id
+  - String statut
+  - Date dateDebut
+  - Date dateFin
+  + accepter()
+  + terminer()
+  + notifierClient()
+}
+
+class Paiement {
+  - int id
+  - double montant
+  - Date date
+  - String statut
+  + initierPaiement()
+  + confirmerPaiement()
+  + getReçu()
+}
+
+class Admin {
+  - int id
+  - String nom
+  - String email
+  + voirDashboard()
+  + gererUtilisateurs()
+  + voirAlertes()
+}
+
+Expatrie "1" -- "*" Demande : possède
+Demande "*" -- "0..1" Prestataire : assignée à
+Prestataire "1" -- "*" Mission : exécute
+Mission "1" -- "0..1" Paiement : génère
+Admin -- "*" Expatrie : gère
+Admin -- "*" Prestataire : gère
+
+@enduml
