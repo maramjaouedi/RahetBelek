@@ -1,0 +1,1 @@
+console.log("Rahet Belek est lancé !");

@@ -5,9 +5,10 @@ import java.util.Scanner;
 public class Main {
     public static void main(String[] args) {
 
-        Scanner sc = new Scanner(System.in);
+        System.out.println("=== RAHET BELEK ===\n");
 
-        System.out.println("=== Rahet Belek ===");
+        // 🔵 Partie 1: Interaction utilisateur
+        Scanner sc = new Scanner(System.in);
 
         System.out.print("Entrez votre nom: ");
         String nom = sc.nextLine();
@@ -17,9 +18,10 @@ public class Main {
         System.out.print("Décrivez votre demande: ");
         String desc = sc.nextLine();
 
-        Demande d = new Demande(desc);
+        Expatrie user = new Expatrie(nom);
+        Demande d = new Demande(1, "Service", desc, "Tunis", 100.0, user);
 
-        System.out.println("Demande créée:");
+        System.out.println("\nDemande créée:");
         d.afficherDemande();
 
         System.out.println("\n1. Valider la demande");
@@ -31,5 +33,28 @@ public class Main {
         }
 
         System.out.println("Statut final: " + d.getStatut());
+
+        // 🔵 Partie 2: Logique métier
+        System.out.println("\n=== Sprint 2 ===");
+
+        Prestataire ali = new Prestataire("Ali", "Aide à domicile");
+
+        d.publier();
+        d.recevoirProposition(ali, "Disponible");
+        d.choisirPrestataire(ali);
+
+        d.afficherPropositions();
+        d.afficherDetails();
+
+        // 🔵 Partie 3: Paiement
+        System.out.println("\n--- Paiement sécurisé ---");
+
+        Paiement paiement = new Paiement(1, 149.0, "2026-04-26", "En attente", "Carte bancaire");
+        paiement.effectuerPaiement();
+        paiement.afficherHistorique();
+
+        Paiement paiement2 = new Paiement(2, 89.0, "2026-04-15", "En attente", "Virement");
+        paiement2.effectuerPaiement();
+        paiement2.afficherHistorique();
     }
 }
