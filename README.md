@@ -1,29 +1,67 @@
+# RahetBelek
 
-# Rahet Belek
+## Pitch
+Des milliers de Tunisiens vivent à l’étranger, ils ont réussi ailleurs mais vivent avec une inquiétude constante.
+Cette plateforme permet aux familles expatriées d’assurer la sécurité et le confort de leurs parents en Tunisie grâce à un service simple et efficace.
 
-##  Pitch
-Des milliers de Tunisiens vivent à l’étranger, ils ont réussit ailleurs..mais aussi ils vivent avec une peur.
-Et quand leurs parents âgés ont besoin d’un simple médicament, ils se retrouvent seuls.
-Permettre aux familles expatriées d’assurer la sécurité et le confort de leurs parents en Tunisie grâce à un service simple, rapide et rémunérateur.
+---
+
+## Description
+Plateforme pour aider les familles à distance à gérer les besoins de leurs parents en Tunisie.
+
+---
 
 ## Équipe Scrum (Groupe)
-- Maram Jaouadi — Product Owner + Dev — Gestion des demandes
--islem talmoudhi — Scrum Master + Dev — Gestion des prestataires
--  razan salem— Dev — Gestion des missions (acceptation + suivi)
--  sara ayari- Dev — Paiement sécurisé + historique
-  hajer saidi — Dev — Administration (dashboard + gestion)
+- Maram Jaouadi — Product Owner + Dev — Gestion des demandes  
+- Islem Talmoudhi — Scrum Master + Dev — Gestion des prestataires  
+- Razan Salem — Dev — Gestion des missions  
+- Sara Ayari — Dev — Paiement sécurisé  
+- Hajer Saidi — Dev — Administration (dashboard + gestion)  
+
+---
 
 ## Acteurs du système
-- Expatrié (Client)
-- Prestataire
-- Administrateur
-## Fonctionnalités principales
-1. Publier une demande de service (courses, médicaments, médecin)
-2. Gérer les prestataires (profil, disponibilité)
-3. Accepter et suivre une mission (statuts)
-4. Effectuer un paiement sécurisé et consul
-5. Administration et supervision de la plateforme
- ## Maquettes Figma
+- Expatrié (Client)  
+- Prestataire  
+- Administrateur  
 
-### Paiement sécurisé et Historique (Sara)
-[Voir les maquettes Figma https://www.figma.com/make/BDUzrzIY6QoTHbyIcZe9E1/Page-de-paiement-en-ligne?fullscreen=1&t=bGWZLnmGNfFEVt1P-1]
+---
+
+## Fonctionnalités principales
+1. Publier une demande  
+2. Gérer les prestataires  
+3. Accepter et suivre une mission  
+4. Paiement sécurisé  
+5. Administration  
+
+---
+
+## 👤 Fonctionnalité Admin
+- Dashboard avec statistiques  
+- Gestion des demandes  
+- Validation des demandes  
+
+---
+
+## 🎨 Design (Figma)
+https://www.figma.com/make/sc0JEQSFUUDMeyo5D2G0yE/Design-admin-dashboard-UI
+
+---
+
+## ⚙️ Technologies
+- Java  
+- GitHub  
+- Figma  
+
+---
+
+## 📊 UML Diagrams
+
+### Use Case Diagram
+<img src="docs/diagrams/usecase.png" width="500"/>
+
+### Class Diagram
+<img src="docs/diagrams/class.png" width="500"/>
+
+### Sequence Diagram
+<img src="docs/diagrams/sequence.png" width="500"/>

@@ -1,0 +1,13 @@
+@startuml
+actor Admin
+participant Dashboard
+participant Demande
+
+Admin -> Dashboard : consulterDashboard()
+Dashboard -> Demande : getStatistiques()
+Demande --> Dashboard : statistiques
+Dashboard --> Admin : afficher
+
+Admin -> Demande : validerDemande()
+Demande --> Admin : confirmation
+@enduml

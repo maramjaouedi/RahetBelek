@@ -1,0 +1,19 @@
+@startuml
+left to right direction
+
+actor Admin
+
+rectangle "Système RahetBelek" {
+  usecase "Consulter Dashboard" as UC1
+  usecase "Gérer Demandes" as UC2
+  usecase "Valider Demande" as UC3
+}
+
+Admin --> UC1
+Admin --> UC2
+
+UC2 --> UC3 : <<include>>
+
+@enduml
+  
+ 

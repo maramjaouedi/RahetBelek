@@ -1,37 +1,54 @@
 package com.rahetbelek.models;
 
+import java.util.Scanner;
+
 public class Main {
     public static void main(String[] args) {
-        System.out.println("=== RAHET BELEK - SPRINT 2 ===\n");
-        
-        // Création des objets
-        Expatrie maram = new Expatrie("Maram");
+
+        System.out.println("=== RAHET BELEK ===\n");
+
+        // 🔵 Partie 1: Interaction utilisateur
+        Scanner sc = new Scanner(System.in);
+
+        System.out.print("Entrez votre nom: ");
+        String nom = sc.nextLine();
+
+        Admin admin = new Admin("Admin1", "admin@mail.com");
+
+        System.out.print("Décrivez votre demande: ");
+        String desc = sc.nextLine();
+
+        Expatrie user = new Expatrie(nom);
+        Demande d = new Demande(1, "Service", desc, "Tunis", 100.0, user);
+
+        System.out.println("\nDemande créée:");
+        d.afficherDemande();
+
+        System.out.println("\n1. Valider la demande");
+        System.out.print("Choix: ");
+        int choix = sc.nextInt();
+
+        if (choix == 1) {
+            admin.validerDemande(d);
+        }
+
+        System.out.println("Statut final: " + d.getStatut());
+
+        // 🔵 Partie 2: Logique métier
+        System.out.println("\n=== Sprint 2 ===");
+
         Prestataire ali = new Prestataire("Ali", "Aide à domicile");
-        
-        // Création d'une demande (utilise le bon constructeur)
-        Demande demande = new Demande(1, "Aide à domicile", 
-            "Besoin d'aide pour ma mere de 75 ans",
-            "Tunis, Menzah 6", 150.0, maram);
-        
-        // Publier la demande
-        demande.publier();
-        
-        // Recevoir une proposition
-        demande.recevoirProposition(ali, "Je suis disponible pour cette mission");
-        
-        // Choisir un prestataire
-        demande.choisirPrestataire(ali);
-        
-        // Afficher les propositions
-        demande.afficherPropositions();
-        
-        // Afficher les détails
-        demande.afficherDetails();
-        
-        System.out.println("\n Sprint 2 - Logique metier ajoutee");
-    }
-    // --- Paiement sécurisé + Historique (Sara) ---
-        System.out.println("\n--- Paiement sécurisé (Sara) ---");
+
+        d.publier();
+        d.recevoirProposition(ali, "Disponible");
+        d.choisirPrestataire(ali);
+
+        d.afficherPropositions();
+        d.afficherDetails();
+
+        // 🔵 Partie 3: Paiement
+        System.out.println("\n--- Paiement sécurisé ---");
+
         Paiement paiement = new Paiement(1, 149.0, "2026-04-26", "En attente", "Carte bancaire");
         paiement.effectuerPaiement();
         paiement.afficherHistorique();
@@ -39,4 +56,5 @@ public class Main {
         Paiement paiement2 = new Paiement(2, 89.0, "2026-04-15", "En attente", "Virement");
         paiement2.effectuerPaiement();
         paiement2.afficherHistorique();
-}}
+    }
+}
