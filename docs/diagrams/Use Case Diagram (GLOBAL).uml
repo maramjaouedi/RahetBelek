@@ -1,0 +1,19 @@
+@startuml
+left to right direction
+
+actor Utilisateur
+actor Prestataire
+actor Admin
+
+Utilisateur --> (Créer demande)
+Utilisateur --> (Consulter demandes)
+Utilisateur --> (Payer mission)
+
+Prestataire --> (Voir demandes)
+Prestataire --> (Accepter mission)
+
+Admin --> (Gérer utilisateurs)
+Admin --> (Valider demandes)
+Admin --> (Consulter dashboard)
+
+@enduml
